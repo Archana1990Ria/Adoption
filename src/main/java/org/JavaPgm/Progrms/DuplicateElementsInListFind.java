@@ -1,0 +1,19 @@
+package org.JavaPgm.Progrms;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class DuplicateElementsInListFind {
+
+    public static void main(String args[]){
+
+        List<String> listOfStrings = Arrays.asList("Java","Python","Java","Kotlin");
+
+        List<String> uniqueElement = listOfStrings.stream().distinct().collect(Collectors.toList());
+
+        System.out.println(uniqueElement);
+
+    }
+
+}
